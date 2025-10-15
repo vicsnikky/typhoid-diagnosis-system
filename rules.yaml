@@ -1,0 +1,47 @@
+# rules.yaml
+# Each rule: id, name, priority (higher wins), conditions, severity, treatments
+# conditions supports: symptoms (map symptom->value or boolean),
+# min_age, max_age, test_results (map), required_any (any of these symptoms true)
+rules:
+  - id: R001
+    name: "Classic typhoid suspicion"
+    priority: 100
+    conditions:
+      symptoms:
+        fever: ["high","moderate"]   # fever severity allowed
+        abdominal_pain: true
+        coated_tongue: true
+    severity: "moderate"
+    treatments:
+      - med: "Ceftriaxone"
+        dose: "50-75 mg/kg IV once daily (or adult dose 1-2 g daily)"
+        duration_days: 7
+        notes: "Adjust for allergies; consult clinician"
+
+  - id: R002
+    name: "High risk / severe dehydration"
+    priority: 200
+    conditions:
+      symptoms:
+        fever: ["high"]
+        severe_dehydration: true
+    severity: "severe"
+    treatments:
+      - med: "Immediate clinical evaluation"
+        dose: null
+        duration_days: null
+        notes: "Refer to emergency care"
+
+  - id: R010
+    name: "Low suspicion - mild illness"
+    priority: 10
+    conditions:
+      symptoms:
+        fever: ["low"]
+        abdominal_pain: false
+    severity: "mild"
+    treatments:
+      - med: "Supportive care"
+        dose: "Oral rehydration, antipyretics as needed"
+        duration_days: 3
+        notes: "Advise follow-up if worsens or fever persists >72 hours"
