@@ -45,3 +45,22 @@ rules:
         dose: "Oral rehydration, antipyretics as needed"
         duration_days: 3
         notes: "Advise follow-up if worsens or fever persists >72 hours"
+    id: R011
+    name: "Mild Typhoid Fever (Low Fever - Outpatient)"
+    priority: 50
+    conditions:
+      symptoms:
+        fever: ["low"]
+        abdominal_pain: false
+        severe_dehydration: false
+    severity: "mild"
+    treatments:
+      - med: "Azithromycin"
+        dose: "400 mg per day (Adults and children ≥12 years)"
+        duration_days: 10
+        notes: "Oral administration; continue up to 14 days based on clinical response"
+
+      - med: "Ofloxacin"
+        dose: "400 mg per day (Adults and children ≥12 years)"
+        duration_days: 10
+        notes: "Alternative oral antibiotic; adjust based on susceptibility and response"
