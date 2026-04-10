@@ -66,7 +66,7 @@ class RuleEngine:
                 "matched_rules": [],
                 "diagnosis_label": "No rule matched - suspected/inconclusive",
                 "severity": "Low",
-                "treatments": [{"Azithromycin and Ofloxacin": "Adults, Children", "400mg": None, "per day": None, "for 10-14days": "Clinical assessment recommended"}]
+                "treatments": [{"Med": "Supportive care", "dose": None, "duration_day": None, "notes": "Clinical assessment recommended"}]
             }
 
         # take top priority match (rules already sorted)
