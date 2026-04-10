@@ -45,7 +45,7 @@ rules:
         dose: "Oral rehydration, antipyretics as needed"
         duration_days: 3
         notes: "Advise follow-up if worsens or fever persists >72 hours"
-    id: R011
+  - id: R011
     name: "Mild Typhoid Fever (Low Fever - Outpatient)"
     priority: 50
     conditions:
