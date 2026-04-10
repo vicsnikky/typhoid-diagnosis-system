@@ -64,3 +64,20 @@ rules:
         dose: "400 mg per day (Adults and children ≥12 years)"
         duration_days: 10
         notes: "Alternative oral antibiotic; adjust based on susceptibility and response"
+  - id: R011
+    name: "Mild Typhoid Fever (Low Fever - Outpatient)"
+    priority: 50
+    conditions:
+      symptoms:
+        fever: ["low"]
+    severity: "mild"
+    treatments:
+      - med: "Azithromycin"
+        dose: "400 mg per day (Adults and children ≥12 years)"
+        duration_days: 10
+        notes: "Oral; continue up to 14 days based on response"
+
+      - med: "Ofloxacin"
+        dose: "400 mg per day (Adults and children ≥12 years)"
+        duration_days: 10
+        notes: "Alternative antibiotic"
