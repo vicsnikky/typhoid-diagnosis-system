@@ -13,9 +13,9 @@ rules:
         coated_tongue: true
     severity: "moderate"
     treatments:
-      - med: "Ceftriaxone"
-        dose: "50-75 mg/kg IV once daily (or adult dose 1-2 g daily)"
-        duration_days: 7
+      - med: "Azithromycin and Ciprofloxacin"
+        dose: "500mg per day (Adult, children 12years and over daily)"
+        duration_days: 12
         notes: "Adjust for allergies; consult clinician"
 
   - id: R002

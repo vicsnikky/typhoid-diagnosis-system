@@ -65,7 +65,7 @@ class RuleEngine:
             return {
                 "matched_rules": [],
                 "diagnosis_label": "No rule matched - suspected/inconclusive",
-                "severity": "unknown",
+                "severity": "Low",
                 "treatments": [{"med": "Supportive care", "dose": None, "duration_days": None, "notes": "Clinical assessment recommended"}]
             }
 
